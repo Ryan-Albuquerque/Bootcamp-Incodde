@@ -62,7 +62,6 @@ main{
     display: flex;
     justify-content: center;
 }
-
 .container{
     display: flex;
     justify-content: space-between;
@@ -73,6 +72,9 @@ main{
     border: 1px solid rgb(223, 225, 229);
     border-radius: 25px;
     padding-right: 10px;
+}
+.container:hover{
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
 }
 #search{
     margin-left: 10px;
@@ -90,10 +92,17 @@ main{
     border: none;
 
     font-size: small;
+
+    margin: auto 2%;
+}
+#searchText:focus{
+    outline: none;
+
 }
 #audio{
     margin: 1%;
-
+    
+    cursor: pointer;
 }
 #audio>img{
     width: 15px;
@@ -118,14 +127,19 @@ main{
 
     font-size: medium;
 }
+.searchButton>button:hover{
+    cursor: pointer;
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+}
+
+
+
 footer{
     position: fixed;
     bottom: 0;
 
     color: rgba(0,0,0,.54);
     background-color:  #f2f2f2;
-
-
 
     font-weight: normal;
     width: 100%;
