@@ -131,6 +131,9 @@ main{
     cursor: pointer;
     box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
 }
+.searchButton>button:focus{
+    outline: none;
+}
 
 
 
@@ -169,6 +172,10 @@ footer{
 .info p:hover{
     text-decoration: underline;
 }
+
+
+
+
 /* RESPONSIVIDADE */
 @media (max-width:1000px){
     nav{
@@ -178,4 +185,41 @@ footer{
         margin: auto 15px;
     }
     
+}
+@media (max-width:900px){
+    .searchButton>button{
+        font-size: 8px;
+    }
+    footer p{
+        font-size: 10px;
+    }
+}
+@media (max-width:720px){
+    .container{
+        width: 65%;
+        margin-top: 20px;
+    }
+    .imgMain>img{
+        margin-top: 20px;
+        width: 50%;
+    }
+}
+@media(max-width:400px){
+    .container{
+        width: 70%;
+        margin-top: 20px;
+    }
+    .imgMain>img{
+        margin-top: 20px;
+        width: 35%;
+    }
+}
+@media (max-width:370px){
+    .location,
+    .info{
+        margin: 0 5px;
+    }
+    footer p{
+        font-size: 8px;
+    }
 }
