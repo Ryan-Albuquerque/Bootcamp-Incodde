@@ -165,11 +165,13 @@ footer{
     display: flex;
     flex-direction: row;
 }
-.info p{
+.info a{
+    text-decoration: none;
+    color: rgba(0,0,0,.54);
     margin-right: 15px;
     cursor: pointer;
 }
-.info p:hover{
+.info a:hover{
     text-decoration: underline;
 }
 
@@ -190,7 +192,8 @@ footer{
     .searchButton>button{
         font-size: 8px;
     }
-    footer p{
+    footer p,
+    footer a {
         font-size: 10px;
     }
 }
@@ -219,7 +222,8 @@ footer{
     .info{
         margin: 0 5px;
     }
-    footer p{
+    footer p,
+    footer a{
         font-size: 8px;
     }
 }
