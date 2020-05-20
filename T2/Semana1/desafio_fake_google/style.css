@@ -164,6 +164,10 @@ footer{
 }
 .info p{
     margin-right: 15px;
+    cursor: pointer;
+}
+.info p:hover{
+    text-decoration: underline;
 }
 /* RESPONSIVIDADE */
 @media (max-width:1000px){
