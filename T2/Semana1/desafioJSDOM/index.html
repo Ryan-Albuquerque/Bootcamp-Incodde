@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booking Store</title>
+
+    <link rel="shortcut icon" href="./src/favicon.ico" type="image/x-icon" />
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="./src/logo.png" title="Booking Store" />
+          <h4>Booking Store</h4>
+        </div>
+        <div class="contact">
+          <a id="contact" href="https://forms.gle/bg5gGkUEvRyN57YRA">Contact</a>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <article id="mainText">
+        <h4>Seja muito bem vindx ao Booking Store!</h4>
+        <h6>Central de Leitores</h6>
+      </article>
+      <span id="add">
+        <button type="submit">
+          + New
+        </button>
+      </span>
+      <section id="users">
+        <div class="mainUsers">
+        </div>
+      </section>
+    </main>
+    <footer></footer>
+
+    <!-- MODALS -->
+    <div class="modalAdd">
+      <div class="modalAddContent">
+        <div class="modalAddHeader">
+          <h3>Add a new reader or book</h3>
+          <button type="submit" id="closeModalAdd">X</button>
+        </div>
+        <hr />
+        <div class="modalAddMain">
+          <form>
+            <label for="">Name</label>
+            <input type="text" id="inputName" placeholder="Add reader name" />
+
+            <label for="">Book</label>
+            <input type="text" id="inputBook" placeholder="Add the book" />
+          </form>
+        </div>
+        <hr />
+        <div class="modalAddFooter">
+          <button type="submit">Add</button>
+        </div>
+      </div>
+    </div>
+
+    <!-- SCRIPTS -->
+    <script src="./js/add.js"></script>
+    <script src="./js/remove.js" defer></script>
+  </body>
+</html>

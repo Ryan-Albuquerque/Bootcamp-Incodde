@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+
+    font-family: arial,sans-serif;
+
+    outline: none;
+}
+header{
+    background-color: rgb(22, 114, 235);
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin: 0 auto;
+    width: 95%;
+}
+.logo{
+    display:flex;
+    align-items: center;    
+}
+.logo>h4{
+    color: white;
+}
+.logo>img{
+    width: 10%;
+    vertical-align: sub;
+}
+#contact{
+    text-decoration: none;
+
+    color: white;
+
+    border: 0.5px solid white;
+    border-radius: 5px;
+    box-shadow: 0px 3px 5px rgb(177, 177, 177);
+
+    padding: 5px 10px;
+}
+#contact:hover{
+    color: rgb(22, 114, 235);
+    background-color: white;
+
+    box-shadow: 0px 4px 5px rgb(177, 177, 177);
+
+    font-weight: bold;
+}
+
+main{
+    margin: 0 auto;
+    width: 95%;
+}
+#mainText{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    margin-top: 3%;
+}
+#mainText>h4{
+    font-size: 30px;
+    font-weight: bolder;
+}
+#mainText>h6{
+    margin-top: 2%;
+
+    font-size: medium;
+
+    color: rgb(100, 100, 100);
+}
+
+#add{
+    display: flex;
+    justify-content: flex-end;
+
+    margin: 0 auto;
+    margin-top: 1%;
+
+    width: 85%;
+}
+#add>button{
+    border: 1px solid rgb(22, 114, 235);
+    border-radius: 5px;
+    background-color: rgb(22, 114, 235);
+    color: white;
+
+    cursor: pointer;
+
+    padding: 8px 10px;
+
+}
+
+.mainUsers{
+    margin: 15px auto;
+    width: 75%;
+
+    background-color: rgb(202, 188, 202);
+    border-radius: 10px;
+
+    box-shadow: 0px 5px 7px rgba(0, 0, 0, 0.705);
+}
+.user{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    border: 1px solid rgb(182, 182, 182);
+    border-radius: 10px;
+
+    padding: 2%;
+    
+}
+.texts h4{
+    margin-bottom: 15px;
+    font-weight: bold;
+    font-size: 20px;
+}
+.texts h6{
+    color: rgb(41, 41, 41);
+}
+#delete, #closeModalAdd{
+    border: none;
+    border-radius: 100%;
+
+    background-color: rgb(202, 188, 202);
+
+    width: 20px;
+    height: 20px;
+}
+#delete:hover,
+#closeModalAdd:hover{
+    background-color: rgb(233, 97, 97);
+    color: white;
+
+    box-shadow: 0px 3px 5px rgb(233, 97, 97);
+
+    cursor: pointer;
+}
+
+/* MODAL */
+
+.modalAdd{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.705);
+}
+.modalAddContent{
+    margin: 5% auto;
+    width: 60%;
+
+    background-color: #fefefe;
+}
+.modalAddHeader{
+    display: flex;
+    justify-content: space-between;
+
+    margin:auto;
+    width: 95%;
+
+    padding: 10px 0px;
+}
+#closeModalAdd{
+    background-color: #fefefe;
+}
+hr{
+    margin: 10px auto;
+}
+
+.modalAddMain{
+    margin: auto;
+    width: 95%;
+}
+.modalAddMain>form{
+    display: flex;
+    flex-direction: column;
+
+    margin: 5px auto;
+}
+.modalAddMain label{
+    margin: 5px 0;
+}
+.modalAddMain input{
+    margin: 5px 0;
+    height: 20px;
+
+    font-size: 15px;
+}
+
+.modalAddFooter{
+    display: flex;
+    justify-content: flex-end;
+
+    margin:auto;
+    width: 95%;
+
+    padding: 7px 0;
+}
+
+.modalAddFooter button{
+    border: 1px solid rgb(22, 114, 235);
+    border-radius: 5px;
+
+    background-color: rgb(22, 114, 235);
+    color: white;
+
+    font-size: medium;
+
+    padding: 5px 10px;
+}
+
+
+/* RESPONSIVIDADE */
+@media (max-width:800px){
+    #mainText>h4{
+        font-size: 20px;
+
+        margin-top: 5%;
+    }
+}
+@media (max-width:500px){
+    header{
+        padding: 2% 0px;
+    }
+    #contact{
+        padding: 3px 8px;
+    }
+}
+@media (max-width:400px){
+    #mainText>h4{
+        font-size: 13px;
+    }
+    #add>button{
+        font-size: 10px;
+        padding: 5px 7px;
+    }
+}
