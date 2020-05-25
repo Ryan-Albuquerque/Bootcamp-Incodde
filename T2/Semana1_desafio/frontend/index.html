@@ -50,69 +50,7 @@
         <button type="button" class="btn btn-outline-primary" data-toggle="modal" data-target="#addUser"> + New</button>
       </div>
       <div class="d-flex flex-wrap flex-row cardsGroup">
-        <div class="card" id="card" >
-          <img id="imgPerson" src="./src/person.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#details">Details</a>
-          </div>
-        </div>
-        <div class="card" id="card">
-          <img id="imgPerson" src="./src/person.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#details">Details</a>
-          </div>
-        </div>
-        <div class="card" id="card">
-          <img id="imgPerson" src="./src/person.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#details">Details</a>
-          </div>
-        </div>
-        <div class="card" id="card">
-          <img id="imgPerson" src="./src/person.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#details">Details</a>
-          </div>
-        </div>
-        <div class="card" id="card">
-          <img id="imgPerson" src="./src/person.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#details">Details</a>
-          </div>
-        </div>
-        <div class="card" id="card">
-          <img id="imgPerson" src="./src/person.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#details">Details</a>
-          </div>
-        </div>
-        <div class="card" id="card">
-          <img id="imgPerson" src="./src/person.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#details">Details</a>
-          </div>
-        </div>
-        <div class="card" id="card">
-          <img id="imgPerson" src="./src/person.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#details">Details</a>
-          </div>
-        </div>
-        <div class="card" id="card">
-          <img id="imgPerson" src="./src/person.png" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <a href="#" class="btn btn-primary" data-toggle="modal" data-target="#details">Details</a>
-          </div>
-        </div>
+
       </div> 
     </main>
 
@@ -135,17 +73,17 @@
               <div class="form-group">
                 <label for="exampleInputEmail1">Email address</label>
                 <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone.</small>
               </div>
               <div class="form-group">
-                <label for="exampleInputPassword1">Professional Hole</label>
-                <input type="password" class="form-control" id="exampleInputPassword1">
+                <label for="exampleInputProfessional">Professional Role</label>
+                <input type="text" class="form-control" id="exampleInputProfessional">
               </div>
             </form>
           </div>
           <div class="modal-footer">
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
-            <button type="submit" class="btn btn-success">Save changes</button>
+            <button type="submit" id="submitForm" class="btn btn-success">Save changes</button>
           </div>
         </div>
       </div>
@@ -166,11 +104,11 @@
 
             <h5>USERNAME</h5>
             <p class="text-secondary">EMAIL</p>
-            <h6>PROFESSIONAL HOLE</h6>
+            <h6>PROFESSIONAL ROLE</h6>
            
           </div>
           <div class="modal-footer">
-            <button type="submit" class="btn btn-danger">Delete</button>
+            <button type="submit" id="dlt" class="btn btn-danger">Delete</button>
             <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
           </div>
         </div>
@@ -179,7 +117,11 @@
 
 
     <!-- Optional JavaScript -->
-    <script src="./index.js"></script>
+    <script src="./js/index.js" defer></script>
+    <script src="./js/add.js" defer></script>
+    <script src="./js/details.js" defer></script>
+    <script src="./js/delete.js"></script>
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
       src="https://code.jquery.com/jquery-3.3.1.slim.min.js"

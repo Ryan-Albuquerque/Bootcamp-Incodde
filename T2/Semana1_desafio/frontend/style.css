@@ -46,6 +46,23 @@ main{
 #imgDetail{
     width: 25%;
 }
+.card-title{
+    text-transform: capitalize;
+}
+
+.no{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.modal-body form{
+    width: 100%;
+}
+.modal-body h5,
+.modal-body h6{
+    text-transform: capitalize;
+}
 
 @media (max-width:800px){
     #card{
